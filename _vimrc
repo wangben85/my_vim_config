@@ -7,6 +7,8 @@ colorscheme torte
 set guioptions-=m
 set guioptions-=T
 set guifont=Courier_new:h10
+
+set encoding=utf-8
 "**************************************************************Personal Setting for Ben Start"
 colorscheme desert                       "set background scheme
 set number                               "set the source file has number
@@ -98,6 +100,19 @@ map <F7> :cp<cr>
 "Jump to next finding in quickfix window
 map <F8> :cn<cr>
 
+"omnicppcomplete setting*****************
+set completeopt=menu,longest,menuone
+let OmniCpp_NamespaceSearch = 2
+let OmniCpp_GlobalScopeSearch = 1
+let OmniCpp_ShowAccess = 1
+let OmniCpp_ShowPrototypeInAbbr = 1 
+let OmniCpp_MayCompleteDot = 1   
+let OmniCpp_MayCompleteArrow = 1 
+let OmniCpp_MayCompleteScope = 1 
+let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
+let OmniCpp_SelectFirstItem = 2
+let OmniCpp_DisplayMode=1
+
 "other keys remap*******************"
 "automatically complete keys"
 inoremap [ []<Esc>i
@@ -151,14 +166,14 @@ nnoremap <silent> <F3> :Grep<CR>
 "let Grep_Default_Filelist = 'C:\Shure_SVN_repo\Projects\Blackhawk\BH_TX\BHTX_App\branches\AD3_DEV_BRANCH\Application'
 
 "grep AD3 files trunk 
-"let Grep_Default_Filelist = 'C:\Shure_SVN_repo\Projects\Blackhawk\BH_TX\BHTX_App\trunk\Application'
+let Grep_Default_Filelist = 'C:\Shure_SVN_repo\Projects\Blackhawk\BH_TX\BHTX_App\trunk\Application'
 
 """""""""""""""""""""""""""""""""""""""""""""""ADX5""""""""""""""""""""""""""""""""""""""""""""""
 "grep ADX5 files development branch
 "let Grep_Default_Filelist = 'C:\Shure_SVN_repo\Projects\Blackhawk\ADx5\ADx5_App\branches\Ben_Dev_Branch\Application'
 
 "grep ADX5 files trunk 
-let Grep_Default_Filelist = 'C:\Shure_SVN_repo\Projects\Blackhawk\ADx5\ADx5_App\trunk\Application'
+"let Grep_Default_Filelist = 'C:\Shure_SVN_repo\Projects\Blackhawk\ADx5\ADx5_App\trunk\Application'
 
 """""""""""""""""""""""""""""""""""""""""""""""Python test scripts""""""""""""""""""""""""""""""""""""""""""""""
 "grep AD3 python scripts path
