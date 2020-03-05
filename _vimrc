@@ -9,6 +9,7 @@ set guioptions-=T
 set guifont=Courier_new:h10
 
 set encoding=utf-8
+
 "**************************************************************Personal Setting for Ben Start"
 colorscheme desert                       "set background scheme
 set number                               "set the source file has number
@@ -27,6 +28,7 @@ set expandtab
 set sw=3                                 "remove the tabs in the beginning
 set shiftwidth=4                         "Set shift wdith = 4 "
 set autoindent                           "Turn on audo indent"
+set smartindent
 filetype on
 filetype plugin on
 filetype indent on
@@ -166,7 +168,7 @@ nnoremap <silent> <F3> :Grep<CR>
 "let Grep_Default_Filelist = 'C:\Shure_SVN_repo\Projects\Blackhawk\BH_TX\BHTX_App\branches\AD3_DEV_BRANCH\Application'
 
 "grep AD3 files trunk 
-let Grep_Default_Filelist = 'C:\Shure_SVN_repo\Projects\Blackhawk\BH_TX\BHTX_App\trunk\Application'
+"let Grep_Default_Filelist = 'C:\Shure_SVN_repo\Projects\Blackhawk\BH_TX\BHTX_App\trunk\Application'
 
 """""""""""""""""""""""""""""""""""""""""""""""ADX5""""""""""""""""""""""""""""""""""""""""""""""
 "grep ADX5 files development branch
@@ -181,6 +183,10 @@ let Grep_Default_Filelist = 'C:\Shure_SVN_repo\Projects\Blackhawk\BH_TX\BHTX_App
 
 "grep ADX5 python scripts path
 "let Grep_Default_Filelist = 'C:\Other_Code_Repo\python_in_shure\adx5_python'
+
+"""""""""""""""""""""""""""""""""""""""""""""""RTOS projects""""""""""""""""""""""""""""""""""""""""""""""
+let Grep_Default_Filelist = 'C:\Other_Code_Repo\CMake_IAR_Template\TWR-KW24D512\boards\twrkw24d512\rtos_examples\freertos_tickless C:\Other_Code_Repo\CMake_IAR_Template\TWR-KW24D512\devices\MKW24D5 C:\Other_Code_Repo\CMake_IAR_Template\TWR-KW24D512\rtos'
+
 
 "Example multiple path test below"
 ":let Grep_Default_Filelist = 'C:\Shure_SVN_repo\Projects\Blackhawk\BH_TX\BHTX_App\branches\low_power_review\Application\AppMain C:\Shure_SVN_repo\Projects\Blackhawk\BH_TX\BHTX_App\branches\low_power_review\Application\AudioMgmt C:\Shure_SVN_repo\Projects\Blackhawk\BH_TX\BHTX_App\branches\low_power_review\Application\UI'  
